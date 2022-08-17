@@ -9,14 +9,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:background="@color/white">
 
         <TextView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="20dp"
             android:gravity="center"
             android:text="친구"
             android:textColor="@color/black"
@@ -25,37 +25,37 @@
 
         <ImageView
             android:id="@+id/icon_option"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/option_icon" />
+            android:src="@drawable/setting_icon" />
 
         <ImageView
             android:id="@+id/icon_music"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/icon_option"
             android:scaleType="centerCrop"
-            android:src="@drawable/music_icon" />
+            android:src="@drawable/hinweis_icon" />
 
         <ImageView
             android:id="@+id/icon_plusfriends"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/icon_music"
             android:scaleType="centerCrop"
-            android:src="@drawable/plusfriends_icon" />
+            android:src="@drawable/man_icon" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/icon_plusfriends"
@@ -82,7 +82,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/add_image"
@@ -91,18 +90,17 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:id="@+id/profile_icon"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,13 +114,12 @@
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:src="@drawable/profile_musci" />
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/profile_music" />
 
 
             </RelativeLayout>
@@ -131,213 +128,762 @@
                 android:id="@+id/line_view"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#e0e0e0" />
 
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
-                    android:text="내 멀티 프로필"
-                    android:textColor="#8d8d8d"
-                    android:textSize="8dp" />
-
-
-                <ImageView
-                    android:id="@+id/plus_multi_profile_icon"
-                    android:layout_width="45dp"
-                    android:layout_height="60dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/plus_multi_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@+id/plus_multi_profile_icon"
-                    android:gravity="center"
-                    android:text="친구별로 다른 프로필을 설정해보세요!"
-                    android:textColor="@color/black"
-                    android:textSize="13dp"
-                    android:textStyle="bold" />
-
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/up_arrow_icon" />
-
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
-                android:background="#e0e0e0" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
-                    android:text="생일인 친구"
-                    android:textColor="#8d8d8d"
-                    android:textSize="8dp" />
-
-
-                <ImageView
-                    android:id="@+id/birth_icon"
-                    android:layout_width="45dp"
-                    android:layout_height="60dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/birth_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_birth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/birth_icon"
-                    android:gravity="center"
-                    android:text="친구의 생일을 확인해 보세요!"
-                    android:textColor="@color/black"
-                    android:textSize="13dp"
-                    android:textStyle="bold" />
-
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/up_arrow_icon" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/side_arrow" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
-                android:background="#e0e0e0" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="90dp"
                 android:orientation="vertical">
 
-                <RelativeLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="내 멀티 프로필"
+                        android:textColor="#8d8d8d"
+                        android:textSize="10dp"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/up_arrow_icon"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
+                    <ImageView
+                        android:id="@+id/plus_multi_profile_icon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/plus_multi_icon"
+                        android:scaleType="centerCrop" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dp"
-                        android:text="업데이트한 친구 8"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/plus_multi_profile_icon"
+                        android:text="친구별로 다른 프로필을 설정해보세요!"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="생일인 친구"
                         android:textColor="#8d8d8d"
-                        android:textSize="8dp" />
+                        android:textSize="10dp"/>
 
                     <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_alignParentRight="true"
-                        android:src="@drawable/up_arrow_icon" />
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/up_arrow_icon"/>
 
-                </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_birthday"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/birth_icon"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/iv_birthday"
+                        android:text="친구의 생일을 확인해보세요!"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="업데이트한 친구 15"
+                        android:textColor="#8d8d8d"
+                        android:textSize="10dp"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/up_arrow_icon"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="4"
-                    android:background="@color/white"
+                    android:layout_weight="1"
                     android:fillViewport="true">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_gravity="center"
                         android:orientation="horizontal">
 
-                        <FrameLayout
-                            android:layout_width="45dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp">
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/kakaotalk_basic_icon" />
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/profile_redrihgt" />
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="bottom|center"
-                                android:layout_marginBottom="3dp"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
                                 android:text="이청원"
                                 android:textColor="@color/black"
-                                android:textSize="10dp" />
+                                android:textSize="10dp"/>
 
-                        </FrameLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
 
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp">
+
+                            <FrameLayout
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kakaotalk_basic_icon"/>
+
+                                <ImageView
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:src="@drawable/profile_redrihgt"
+                                    android:layout_gravity="left|top"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                android:text="이청원"
+                                android:textColor="@color/black"
+                                android:textSize="10dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </LinearLayout>
-
 
                 </HorizontalScrollView>
 
@@ -346,78 +892,100 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#e0e0e0" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="15dp">
+                android:layout_height="90dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
-                    android:text="추천친구"
-                    android:textColor="#8d8d8d"
-                    android:textSize="8dp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="추천 친구"
+                        android:textColor="#8d8d8d"
+                        android:textSize="10dp"/>
 
-                <ImageView
-                    android:id="@+id/recommend_friends"
-                    android:layout_width="45dp"
-                    android:layout_height="60dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/recommend_friends"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/up_arrow_icon"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/recommend_friends"
-                    android:gravity="center"
-                    android:text="새로운 친구를 만나보세요 "
-                    android:textColor="@color/black"
-                    android:textSize="13dp"
-                    android:textStyle="bold" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/up_arrow_icon" />
+                    <ImageView
+                        android:id="@+id/iv_recommend"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/recommend_friends"
+                        android:scaleType="centerCrop" />
 
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/side_arrow" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/iv_recommend"
+                        android:layout_marginLeft="15dp"
+                        android:text="새로운 친구를 만나보세요!"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
 
+                    <ImageView
+                        android:id="@+id/iv_side_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:src="@drawable/side_arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginRight="20dp"/>
 
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toLeftOf="@+id/iv_side_arrow"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textColor="#9e9e9e"
+                        android:text="100"
+                        android:textSize="14dp"
+                        android:layout_marginBottom="3dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#e0e0e0" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -427,10 +995,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="20dp"
                     android:text="채널"
                     android:textColor="#8d8d8d"
-                    android:textSize="8dp"
+                    android:textSize="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -447,211 +1015,187 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#e0e0e0" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="30dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="20dp"
                     android:text="친구 6"
                     android:textColor="#8d8d8d"
-                    android:textSize="8dp"
+                    android:textSize="10dp"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon2"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon2"
+                    android:layout_toRightOf="@+id/iv_friend_list1"
                     android:text="강대한"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon3"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon3"
+                    android:layout_toRightOf="@+id/iv_friend_list2"
                     android:text="강석현"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon4"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon4"
+                    android:layout_toRightOf="@+id/iv_friend_list3"
                     android:text="강수빈"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon5"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon5"
+                    android:layout_toRightOf="@+id/iv_friend_list4"
                     android:text="강우주"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon6"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon6"
-                    android:text="강지훈"
+                    android:layout_toRightOf="@+id/iv_friend_list5"
+                    android:text="룸지강"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
 
-
             </RelativeLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp">
 
                 <ImageView
-                    android:id="@+id/profile_icon7"
-                    android:layout_width="50dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="5dp"
-                    android:scaleType="fitXY"
+                    android:id="@+id/iv_friend_list6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/kakaotalk_basic_icon"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/profile_icon7"
+                    android:layout_toRightOf="@+id/iv_friend_list6"
                     android:text="건호"
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold" />
-
 
             </RelativeLayout>
 
@@ -673,14 +1217,14 @@
 
             <ImageView
                 android:id="@+id/bottom_person"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
-                android:src="@drawable/bottom_person_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bottom_man_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType="centerCrop"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -690,14 +1234,14 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/bottom_chat_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType="centerCrop"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -707,14 +1251,14 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
-                android:src="@drawable/bottom_middle_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bottom_eye_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType="centerCrop"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -725,14 +1269,14 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
-                android:src="@drawable/bottom_bag_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bottom_shopping_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType="centerCrop"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -742,14 +1286,14 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/bottom_more_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:scaleType="centerCrop"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

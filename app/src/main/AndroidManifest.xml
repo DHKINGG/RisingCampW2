@@ -17,10 +17,10 @@
             android:name=".JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".FriendsListActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FriendsListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
