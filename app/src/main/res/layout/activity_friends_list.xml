@@ -94,9 +94,10 @@
 
                 <ImageView
                     android:id="@+id/profile_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/kakaotalk_basic_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -125,23 +126,37 @@
             </RelativeLayout>
 
             <View
+                android:id="@+id/line_view"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
                 android:background="#e0e0e0" />
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginTop="20dp">
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="내 멀티 프로필"
+                    android:textColor="#8d8d8d"
+                    android:textSize="8dp" />
+
 
                 <ImageView
                     android:id="@+id/plus_multi_profile_icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
                     android:src="@drawable/plus_multi_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -161,14 +176,192 @@
                     android:textStyle="bold" />
 
 
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/up_arrow_icon" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
-                    android:text="내 멀티 프로필"
-                    android:textSize="10dp" />
+                    android:text="생일인 친구"
+                    android:textColor="#8d8d8d"
+                    android:textSize="8dp" />
+
+
+                <ImageView
+                    android:id="@+id/birth_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/birth_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/birth_icon"
+                    android:gravity="center"
+                    android:text="친구의 생일을 확인해 보세요!"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/up_arrow_icon" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/side_arrow" />
 
             </RelativeLayout>
+
+            <View
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fillViewport="true"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="업데이트한 친구 8"
+                        android:textColor="#8d8d8d"
+                        android:textSize="8dp" />
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="60dp">
+
+
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="추천친구"
+                    android:textColor="#8d8d8d"
+                    android:textSize="8dp" />
+
+
+                <ImageView
+                    android:id="@+id/recommend_friends"
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/recommend_friends"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/recommend_friends"
+                    android:gravity="center"
+                    android:text="친구의 생일을 확인해 보세요!"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/up_arrow_icon" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/side_arrow" />
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
