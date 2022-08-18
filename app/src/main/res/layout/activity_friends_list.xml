@@ -1190,7 +1190,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="15dp"
                         android:layout_toRightOf="@+id/iv_friend_list5"
-                        android:text="룸지강"
+                        android:text="강지훈"
                         android:textColor="@color/black"
                         android:textSize="18dp"
                         android:textStyle="bold" />

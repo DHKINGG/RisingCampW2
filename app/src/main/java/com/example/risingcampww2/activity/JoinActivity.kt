@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.risingcampww2.MyApplication
 import com.example.risingcampww2.R
 import com.example.risingcampww2.databinding.ActivityJoinBinding
@@ -27,13 +28,14 @@ class JoinActivity : AppCompatActivity() {
             val secondPassword = binding.etInputScreenPassword.text.toString()
 
             if (id.isEmpty() || password.isEmpty() || passwordRecheck.isEmpty() || name.isEmpty()) {
-                Log.d("myLog", "항목을 전부 입력해주세요.")
+                Toast.makeText(this@JoinActivity, "항목을 전부 입력해 주세요.", Toast.LENGTH_SHORT).show()
+
             } else {
                 if (findOverlapId(id)) {
-                    Log.d("myLog", "아이디 중복입니다.")
+                    Toast.makeText(this@JoinActivity, "아이디 중복입니다.", Toast.LENGTH_SHORT).show()
                 }
                 else if (secondPassword.length != 4) {
-                    Log.d("myLog", "4자리의 2차비밀번호를 입력해주세요.")
+                    Toast.makeText(this@JoinActivity, "4자리의 2차비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show()
                 }
                 else if (password == passwordRecheck) {
                     val intent = Intent(this, MainActivity::class.java)
@@ -44,7 +46,8 @@ class JoinActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else {
-                    Log.d("myLog", "패스워드를 확인해주세요.")
+                    Toast.makeText(this@JoinActivity, "패스워드를 확인해주세요.", Toast.LENGTH_SHORT).show()
+
                 }
             }
         }

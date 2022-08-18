@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.risingcampww2.MyApplication
 import com.example.risingcampww2.databinding.ActivityMainBinding
 import com.example.risingcampww2.model.UserInfo
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else {
-                Log.d("myLog", "아이디 혹은 비밀번호를 확인해주세요.")
+                Toast.makeText(this@MainActivity, "아이디 혹은 비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show()
             }
         }
 
