@@ -13,7 +13,7 @@ import com.example.risingcampww2.databinding.ActivityJoinBinding
 
 class FriendsListActivity : AppCompatActivity() {
     private lateinit var binding : ActivityFriendsListBinding
-    private val password = MyApplication.prefs.getUser(MyApplication.userPrefsName).secondPassword
+    private var password = ""
     private var inputPassword = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,12 @@ class FriendsListActivity : AppCompatActivity() {
         setContentView(view)
 
         setButtonOnClickListener()
+    }
 
+    override fun onStart() {
+        super.onStart()
+
+        password = MyApplication.prefs.getUser(MyApplication.userPrefsName).secondPassword
     }
 
     override fun onResume() {
