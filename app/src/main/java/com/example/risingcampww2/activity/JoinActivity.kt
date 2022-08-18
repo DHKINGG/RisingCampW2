@@ -24,6 +24,7 @@ class JoinActivity : AppCompatActivity() {
             val password = binding.etInputPassword.text.toString()
             val passwordRecheck = binding.etInputPasswordRecheck.text.toString()
             val name = binding.etInputName.text.toString()
+            val secondPassword = binding.etInputScreenPassword.text.toString()
 
             if (id.isEmpty() || password.isEmpty() || passwordRecheck.isEmpty() || name.isEmpty()) {
                 Log.d("myLog", "항목을 전부 입력해주세요.")
@@ -31,14 +32,18 @@ class JoinActivity : AppCompatActivity() {
                 if (findOverlapId(id)) {
                     Log.d("myLog", "아이디 중복입니다.")
                 }
+                else if (secondPassword.length != 4) {
+                    Log.d("myLog", "4자리의 2차비밀번호를 입력해주세요.")
+                }
                 else if (password == passwordRecheck) {
                     val intent = Intent(this, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     // ABCDE에서 C를 CLEAR_TOP으로 불러오면 ABCDE -> ABC가 됨
-                    val userInfo = UserInfo(id, password, name)
+                    val userInfo = UserInfo(id, password, name, secondPassword)
                     setUserList(userInfo)   // SP에 userList 저장
                     startActivity(intent)
-                } else {
+                }
+                else {
                     Log.d("myLog", "패스워드를 확인해주세요.")
                 }
             }

@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        binding.kakaoId.setOnClickListener {
+            MyApplication.prefs.clearUserList()
+        }
+
         binding.btnLogin.setOnClickListener {
             if(checkUser(binding.etLoginId.text.toString(), binding.etLoginPassword.text.toString())) {
                 val intent = Intent(this,FriendsListActivity::class.java)
@@ -49,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     private fun checkUser(id: String, pw: String): Boolean {
         for (i in 0 until userList.size) {
             if (id == userList[i].id && pw == userList[i].password) {
+                MyApplication.prefs.setUser(MyApplication.userPrefsName, userList[i])
                 return true
             }
         }

@@ -7,7 +7,9 @@ import com.example.risingcampww2.model.PreferenceUtil
 class MyApplication: Application() {
     companion object {
         lateinit var prefs: PreferenceUtil
-        val userListPrefsName = "user_name"
+        val userListPrefsName = "user_name_list"
+        val userPrefsName = "user_name"
+        val isBackground = "is_background"
     }
 
     override fun onCreate() {
