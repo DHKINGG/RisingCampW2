@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // userList에 sp에서 리스트를 가져와서 저장
+
     private fun getUserList() {
         userList = MyApplication.prefs.getUserList(MyApplication.userListPrefsName)
     }

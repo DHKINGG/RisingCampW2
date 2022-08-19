@@ -77,7 +77,7 @@ class JoinActivity : AppCompatActivity() {
 
     // 입력한 user데이터를 sp에 추가
     private fun setUserList(user: UserInfo) {
-        userList.add(user)
-        MyApplication.prefs.setUserList(MyApplication.userListPrefsName, userList)
+        userList.add(user) // 전역변수에 추가
+        MyApplication.prefs.setUserList(MyApplication.userListPrefsName, userList) // sp에 추가
     }
 }

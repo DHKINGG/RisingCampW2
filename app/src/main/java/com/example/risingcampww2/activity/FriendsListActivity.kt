@@ -12,7 +12,7 @@ import com.example.risingcampww2.databinding.ActivityFriendsListBinding
 import com.example.risingcampww2.databinding.ActivityJoinBinding
 
 class FriendsListActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityFriendsListBinding
+    private lateinit var binding: ActivityFriendsListBinding
     private var password = ""
     private var inputPassword = ""
 
@@ -28,7 +28,7 @@ class FriendsListActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        password = MyApplication.prefs.getUser(MyApplication.userPrefsName).secondPassword
+        password = MyApplication.prefs.getUser(MyApplication.userPrefsName).secondPassword // 로그인 되어있는 유저의 세컨드 패스워드를 가져와
     }
 
     override fun onResume() {
@@ -54,7 +54,7 @@ class FriendsListActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        super.onDestroy()
+        super.onDestroy()    //  해당 액티비티가 종료되었을떄
 
         MyApplication.prefs.clearUser()
         MyApplication.prefs.clearBoolean()
@@ -95,7 +95,7 @@ class FriendsListActivity : AppCompatActivity() {
             removeNumber()
         }
         binding.ivFriendLogout.setOnClickListener {
-            finish()
+            finish() // 액티비티 종료
         }
     }
 

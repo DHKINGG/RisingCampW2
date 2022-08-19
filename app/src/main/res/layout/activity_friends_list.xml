@@ -386,7 +386,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="최재용"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -425,7 +425,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="이상비"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -464,7 +464,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="오세일"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -503,7 +503,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="조영훈"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -542,7 +542,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="이상걸"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -581,7 +581,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="한정범"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -620,7 +620,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="이지민"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -659,7 +659,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="최성호"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -698,7 +698,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="신관호"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -737,7 +737,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="김류연"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -776,7 +776,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="김연석"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -815,7 +815,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="류도훈"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -894,7 +894,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="12dp"
-                                    android:text="이청원"
+                                    android:text="강민주"
                                     android:textColor="@color/black"
                                     android:textSize="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
