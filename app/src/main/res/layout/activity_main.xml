@@ -34,12 +34,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:backgroundTint="#f0f0f0"
+        android:drawableRight="@drawable/login_qmark"
         android:hint="카카오아이디 , 이메일 , 전화번호"
         android:textColor="@color/black"
         android:textColorHint="#e3deda"
-        android:drawableRight="@drawable/login_qmark"
         app:layout_constraintTop_toBottomOf="@+id/kakao_logo" />
-
 
     <EditText
         android:inputType="textPassword"
@@ -96,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -111,7 +110,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

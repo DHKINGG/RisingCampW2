@@ -7,7 +7,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 class PreferenceUtil(context: Context) {
-    private val prefs: SharedPreferences = context.getSharedPreferences("my_pref", Context.MODE_PRIVATE)
+    private val prefs: SharedPreferences = context.getSharedPreferences("my_pref", Context.MODE_PRIVATE) //MODE_PRIVATE : 생성한 application에서만 사용 가능
 
     // gson : object에서 json으로, json에서 object로 바꿔주는 도구
     // json : 데이터가 string화 된 것
